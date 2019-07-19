@@ -1,0 +1,113 @@
+@import "variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+html {
+  height: 100%;
+  background-color: $color-grisfondo;
+}
+body {
+  margin: 0px;
+
+  div#root {
+    font-family: "Poppins", sans-serif;
+    background-color: $color-grisfondo;
+
+    .titulosPeliculas {
+      font-size: 2em;
+      margin-bottom: 50px;
+    }
+
+    .valoracionPeliculas {
+      font-size: 1.3em;
+      margin-top: 40px;
+      color: $color-dorado;
+    }
+
+    .textosPeliculas {
+      font-size: 1em;
+      text-align: justify;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .combitextos {
+      width: 70%;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+    }
+
+    .navegador {
+      display: flex;
+      text-align: center;
+      font-size: 1em;
+      color: $color-blanco;
+      box-sizing: border-box;
+      background-color: $color-grisfondo;
+      list-style-type: none;
+    }
+
+    .tablapeliculas {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+      margin-bottom: 50px;
+      width: 70%;
+      padding: 140px;
+      text-align: center;
+    }
+
+    .poster {
+      width: 350px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .contenedor {
+      display: flex;
+      text-align: center;
+      font-size: 1.5em;
+      color: $color-blanco;
+      box-sizing: border-box;
+      background-color: $color-grisfondo;
+      list-style-type: none;
+    }
+
+    @media all {
+      .contenedor {
+        flex-wrap: wrap;
+      }
+      .contenedor > .link {
+        flex: 1 1 25%;
+      }
+    }
+
+    @media all and (max-width: 400px) {
+      .contenedor > .link {
+        flex: 1 1 100%;
+      }
+    }
+
+    .contenedor > .link {
+      margin-top: 30px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 2em;
+      color: $color-blanco;
+      background-color: $color-grisfondo;
+      list-style-type: none;
+    }
+
+    .link:hover {
+      background-color: $color-gris;
+    }
+
+    .app {
+      background-color: $color-grisfondo;
+    }
+  }
+}
